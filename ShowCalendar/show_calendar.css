@@ -1,0 +1,143 @@
+/* Navigation Bar Code starts here */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar {
+    position: sticky;
+    top: 0%;
+}
+.navbar__top {
+    display: flex;
+    background-color: #121451;
+    color: white;
+    height: 60px;
+    padding-left: 13vw;
+    padding-right: 13vw;
+}
+
+.left__side {
+    width: 50vw;
+    display: flex;
+}
+
+.right__side {
+    width: 50vw;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.navbar__logo {
+    height: 50%;
+    margin: 14px;
+    margin-right: 50px;
+}
+
+.top__links {
+    text-decoration: none;
+    color: gray;
+    font-size: 18px;
+}
+
+.top__links:hover {
+    color: white;
+}
+
+.link__div {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin: 0px 10px;
+}
+
+.current__page__div {
+    border-bottom: 5px solid white;  
+}
+
+.current__page__link {
+    color: white;
+}
+
+.navbar__bottom {
+    background-color: #f6f6f6;
+    height: 40px;
+    display: flex;
+    padding-left: 14vw;
+}
+
+.bottom__link {
+    text-decoration: none;
+    color: #48c9dd;
+}
+
+.bottom__link:hover {
+    text-decoration: underline;
+}
+
+.current__subpage__link {
+    color: black;
+}
+
+.navbar__bottom > .link__div {
+    margin: 0px 15px;
+}
+
+/* Navigation Bar Code Endss here */
+
+.calendar__div {
+    /* border: 1px solid black; */
+    margin: 0 13vw;
+}
+
+.calendar__title {
+    font-size: 30px;
+    color: #555555;
+    margin: 10px 0px;
+}
+
+.month__states {
+    display: flex;
+    background-color: #eeeeee;
+    padding: 10px;
+}
+
+.current__states {
+    display: flex;
+    justify-content: center;
+    color: gray;
+}
+
+.states__number {
+    color: black;
+    margin-right: 10px;
+}
+.month__states__div1, .month__states__div2, .month__states__div3 {
+    width: 33%;
+}
+
+.month__states__div1 {
+    font-size: 22px;
+}
+
+.month__states__div2 {
+    font-size: 13px;
+    text-align: center;
+}
+.month__states__div3 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.month__states__div3 > button {
+    border: 3px solid #48c9dd;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 8px 15px;
+}
+
+.month__states__div3 > button:hover {
+    border: 3px solid black;
+    cursor: pointer;
+}
