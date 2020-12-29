@@ -1,0 +1,38 @@
+#outerbox{
+    display:flex;
+    width:60%;
+    height:600px;
+    border:1px solid black;
+    
+}
+#sidebar{
+  display:flex;
+  flex-direction:column;
+  width:20%;
+  height:600px;
+  border:1px solid navy;
+}
+.sidebar_inner{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    height:600px;
+    border:1px solid navy;  
+}
+table{
+    width:100%;
+
+}
+tr{
+    background-color: aliceblue;
+    color:skyblue;
+    padding:5px;
+}
+.navy{
+    background-color: navy;
+    color:white;
+    font-weight:normal;
+}
+tr:hover{
+    color:black;
+}
