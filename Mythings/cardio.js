@@ -2,7 +2,7 @@ var modal = document.getElementById("myModal");
 
 
 var btn = document.getElementById("contentbox_btn");
-
+// var editval=document.getElementsByClassName("pencil")
 
 var span = document.getElementsByClassName("close")[0];
 
@@ -78,36 +78,36 @@ function del(c)
 }
 function edit(a)
 {
-    var activity_value=document.getElementById("Hiking_value").innerHTML;
+    var activity_value=document.getElementById(a).innerHTML;
     console.log(activity_value)
    
   
-   var x=localStorage.getItem("val")
-    if(activity_value=="")
-    {
-        alert("Something went wrong, check that you filled in a name")
-    }
-    if(activity_value!="")
-    {
-    var tab_add_value=document.getElementById(a)
-    var output=` <tr id=${activity_value}>
-    <td class="first_td">
-        <div>
-           <img src="${x}"/>
-        </div>
-    </td>
-    <td class="sec_td">
-       <a href="backcountry.html">${activity_value}</a>
-    </td>
-    <td class="third_td">
-        <a><img src="https://www.shapelink.com/images/icons/pencil.png" alt="pencil"/></a>
-    </td>
-    <td class="third_td">
-      <a><img src="https://www.shapelink.com/images/icons/cross.png" alt="cross" onClick="del('${activity_value}')"/></a>
-    </td>
-</tr>`
-tab_add_value.innerHTML=output;
-    }
+//    var x=localStorage.getItem("val")
+//     if(activity_value=="")
+//     {
+//         alert("Something went wrong, check that you filled in a name")
+//     }
+//     if(activity_value!="")
+//     {
+//     var tab_add_value=document.getElementById(a)
+//     var output=` <tr id=${activity_value}>
+//     <td class="first_td">
+//         <div>
+//            <img src="${x}"/>
+//         </div>
+//     </td>
+//     <td class="sec_td">
+//        <a href="backcountry.html">${activity_value}</a>
+//     </td>
+//     <td class="third_td">
+//         <a><img src="https://www.shapelink.com/images/icons/pencil.png" alt="pencil"/></a>
+//     </td>
+//     <td class="third_td">
+//       <a><img src="https://www.shapelink.com/images/icons/cross.png" alt="cross" onClick="del('${activity_value}')"/></a>
+//     </td>
+// </tr>`
+// tab_add_value.innerHTML=output;
+//     }
 }
 
 
