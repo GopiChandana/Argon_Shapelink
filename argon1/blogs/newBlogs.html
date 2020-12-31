@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="newBlogs.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Twiik</title>
+  </head>
+
+  <body>
+    <!--Navigation Bar Code starts here-->
+    <div class="navbar">
+      <div class="navbar__top">
+        <div class="left__side">
+          <img
+            class="navbar__logo"
+            src="https://www.shapelink.com/images/logo.png"
+          />
+          <div class="link__div">
+            <a class="top__links" href="https://example.com">Exercise Log</a>
+          </div>
+          <div class="link__div">
+            <a class="top__links" href="https://example.com">Results</a>
+          </div>
+          <div class="link__div">
+            <a class="top__links" href="https://example.com">Challenges</a>
+          </div>
+          <div class="link__div current__page__div">
+            <a class="top__links current__page__link" href="https://example.com"
+              >Friends</a
+            >
+          </div>
+          <div class="link__div">
+            <a class="top__links" href="https://example.com">Groups</a>
+          </div>
+        </div>
+        <div class="right__side">
+          <div class="login_info">
+            <span>Logged in as</span> <span id="login_info"></span>
+            <p class="log_out">Log out</p>
+          </div>
+          <div class="login_icon">
+            <div class="login_icon_img">
+              <img src="login_logo1.png" alt="" />
+            </div>
+            <div class="login_icon_img">
+              <img src="login_logo2.png" alt="" />
+            </div>
+            <div class="login_icon_img">
+              <img src="login_logo3.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar__bottom">
+        <div class="link__div">
+          <a class="bottom__link" href="https://example.com">My friends</a>
+        </div>
+        <div class="link__div">
+          <a
+            class="bottom__link current__subpage__link"
+            href="https://example.com"
+            >Blogs</a
+          >
+        </div>
+        <div class="link__div">
+          <a class="bottom__link" href="https://example.com">Competetions</a>
+        </div>
+        <div class="link__div">
+          <a class="bottom__link" href="https://example.com">Toplists</a>
+        </div>
+      </div>
+    </div>
+    <!--Navigation Bar Code Ends here-->
+    <!-- main page code start -->
+    <div class="container">
+      <div class="container_left">
+        <div class="container_left_inner">
+          <div class="container_left_inner_heading">
+            <p>Create a new Blog Entry</p>
+            <p>
+              Here you can write new entries in your Blog and create new Blog
+              pages.
+            </p>
+            <p>CONTENT</p>
+            <h5>Subject</h5>
+            <input type="text" id="subject" />
+          </div>
+          <div class="container_left_inner_input">
+            <p>Content</p>
+
+            <textarea type="text" id="mytextarea" class="mytextarea"></textarea>
+
+            <div class="settings">
+              <p>SETTINGS</p>
+              <p>Blog Entry Settings</p>
+              <div class="checker">
+                <input type="checkbox" />
+                <p>Add as a page (is shown in the menu to the left).</p>
+              </div>
+              <div class="checker">
+                <input type="checkbox" />
+                <p>Subscribe to comments on this blog item.</p>
+              </div>
+              <button id="textarea_btn">SAVE</button>
+            </div>
+            <div class="social_networks">
+              <fieldset>
+                <legend>Add to social networks</legend>
+                <p>
+                  Show this blog item to your friends on Facebook and Twitter.
+                </p>
+                <div class="iconsAndCheck">
+                  <div class="icons">
+                    <div class="icons_fb">
+                      <img src="fbk.gif" alt="facebook" />
+                    </div>
+                    <div class="icons_fb">
+                      <img src="twitt.gif" alt="facebook" />
+                    </div>
+                  </div>
+                  <div class="checkerAndInput">
+                    <div class="checkerAndInput_inner">
+                      <input type="checkbox" />
+                      <p>Add to my wall on Facebook</p>
+                    </div>
+                    <div class="checkerAndInput_inner">
+                      <input type="checkbox" />
+                      <p>Add tweet on Twitter</p>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container_right">
+        <div class="container_right_inner">
+          <p>Text- and photo-notation</p>
+          <p>Click on the images below to use them in your blog entries.</p>
+          <div class="container_right_inner_Div"><p>No attached images</p></div>
+          <button>UPLOAD IMAGES</button>
+          <button>BROWSE IMAGES</button>
+        </div>
+      </div>
+    </div>
+    <!-- start of footer -->
+    <div class="footer">
+      <div class="footer_left">
+        <div class="footer_left_img">
+          <img src="https://www.shapelink.com/images/logo.png" alt="logo" />
+        </div>
+        <p>
+          All rights reserved © 2002 - 2020 <br />
+          Developed by Wellnesstech Labs International AB
+        </p>
+        <p>
+          <a href="">Contact Us</a>
+        </p>
+        <p>
+          <a href="">Terms & Conditions</a>
+        </p>
+      </div>
+      <div class="footer_right">
+        <div class="footer_right_img">
+          <img src="../fb.png" alt="facebook" class="fb" />
+        </div>
+        <div class="footer_right_img">
+          <img src="../inst.png" alt="facebook" />
+        </div>
+        <div class="footer_right_img">
+          <img src="../link.png" alt="facebook" />
+        </div>
+        <div class="footer_right_img">
+          <img src="../apple.png" alt="facebook" />
+        </div>
+        <div class="footer_right_img">
+          <img src="../android.png" alt="facebook" />
+        </div>
+      </div>
+    </div>
+    <script src="newBlogs.js"></script>
+  </body>
+</html>
