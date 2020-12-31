@@ -135,17 +135,17 @@
                 </tr>
                         <tr>
                     <td width="100" class="food_table_text">Name</td>
-                    <td colspan="2"><input type="text" name="name" id="name" value="" class="fancy_input" tabindex="1"></td>
+                    <td colspan="2"><input type="text" name="name" id="name" value="" class="food_input" ></td>
                 </tr>
                 <tr>
                     <td class="food_table_text">Category</td>
                     <td colspan="2">
                           <select name="category_id" class="food_input" id="category_id">
-                                            <option value="118">Baby food</option>
-                                            <option value="119">Baked Products</option>
-                                            <option value="120">Beef Products</option>
-                                            <option value="121">Beverages</option>
-                                            <option value="122">Breakfast Cereals</option>
+                                            <option value="Baby food">Baby food</option>
+                                            <option value="Baked Products">Baked Products</option>
+                                            <option value="Beef Products">Beef Products</option>
+                                            <option value="Beverages">Beverages</option>
+                                            <option value="Breakfast Cereals">Breakfast Cereals</option>
                                             <option value="123">Cereal Grains and Pasta</option>
                                             <option value="124">Dairy and Egg Products</option>
                                             <option value="125">Ethnic Foods</option>
@@ -157,7 +157,7 @@
                                             <option value="131">Legumes and Legume Products</option>
                                             <option value="132">Meals, Entrees, and Sidedishes</option>
                                             <option value="133">Nut and Seed Products</option>
-                                            <option value="142" selected="">Other</option>
+                                            <option value="Other" selected="">Other</option>
                                             <option value="134">Pork Products</option>
                                             <option value="135">Poultry Products</option>
                                             <option value="136">Sausages and Luncheon Meats</option>
@@ -173,7 +173,7 @@
                     <td class="food_table_text">Calories</td>
                     <td class="food_table_text"><input type="text" name="calories" id="calories" value="" class="food_input food_table_text" > kcal/100g</td>
                     <td rowspan="4" valign="bottom" align="right">
-                        <input type="submit" name="food_save" value="Save" class="food_save" >							</td>
+                        <button  onclick="save_food()" id="food_save" >SAVE</button>							</td>
                 </tr>
                 <tr class="food_table_text">
                     <td class="food_table_text">Protein</td>
@@ -185,7 +185,7 @@
                 </tr>
                 <tr class="food_table_text">
                     <td class="food_table_text">Fat</td>
-                    <td class="food_table_text"><input type="text" name="fat" id="fat" value="" class="food_input food_table_text"  > g/100g</td>
+                    <td class="food_table_text"><input type="text" name="fat" id="fat" value="" class="food_input food_table_text" > g/100g</td>
                 </tr>					
                 </tbody></table>
                 
@@ -203,8 +203,8 @@
                         <th id="uractivities" width="17%">Carbo Hydrates<br/>(g)</th>
                         <th id="uractivities" width="10%">&nbsp;</th>
                     </tr>
-                    <tr>
-                        <td id="no_provision"colspan="6">There is no provision saved.</td>
+                    <tr id="no_provision">
+                        <td id="no_provision"  colspan="6">There is no provision saved.</td>
                     </tr>
                     </tbody>
                     </table>
@@ -212,6 +212,6 @@
            </div>
         </div>
     </div>
-    <script src="Mythings.js"></script> 
+    <script src="Food.js"></script> 
 </body>
 </html>
