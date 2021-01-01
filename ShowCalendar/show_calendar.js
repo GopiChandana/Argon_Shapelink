@@ -189,16 +189,25 @@ get_Task_List = () => {
   var xyz = Object.assign({}, localStorage);
   for (i in xyz) {
     // console.log(i)
-    if (i == "day" || i == "count" || i == "Content_box") {
-      console.log("Day and Count not printed");
-    } else {
+    // console.log("Hi: " +  i.substring(0, 4))
+
+    var task = i.substring(0, 4);
+    if (task == "task") {
       total__task.push(i);
+    } else {
+      console.log("Not added to local storage key list: " + i);
     }
+
+    // if((i == "day") || (i == "count") || (i == "Content_box")){
+    //   console.log("Day and Count not printed")
+    // } else {
+    //   total__task.push(i)
+    // }
   }
 };
 get_Task_List();
 
-// console.log(total__task)
+console.log("total__task: " + total__task);
 // var up = document.getElementById("up");
 // up.addEventListener("click")
 
