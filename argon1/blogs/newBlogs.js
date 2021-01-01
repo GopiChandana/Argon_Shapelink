@@ -46,10 +46,10 @@ const init = function (e) {
   };
   sumit_button.addEventListener("click", addData);
 };
-var myBlogsl = JSON.parse(localStorage.getItem("myBlogs"));
-if (myBlogsl.length > 3) {
-  window.localStorage.removeItem("myBlogs");
-}
+// var myBlogsl = JSON.parse(localStorage.getItem("myBlogs"));
+// if (myBlogsl.length > 3) {
+//   window.localStorage.removeItem("myBlogs");
+// }
 
 document.addEventListener("DOMContentLoaded", function () {
   init();
