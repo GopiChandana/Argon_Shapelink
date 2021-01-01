@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mythings</title>
+    <title>Meals</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="Mythings.css"/>
+    <link rel="stylesheet" href="Meals.css"/>
 </head>
 <body>
     <div class="navbar"> 
@@ -109,75 +109,53 @@
                         <th>NUTRITION</th>
                     </tr>
                     <tr>
-                       <td><a href="Food.html">Food<i class="fa fa-caret-left" ></i></a></td> 
+                       <td>Food<i class="fa fa-caret-left" ></i></td> 
                     </tr>
                     <tr>
-                        <td><a href="Meals.html">Meals<i class="fa fa-caret-left" ></i></a></td> 
+                        <td>Meals<i class="fa fa-caret-left" ></i></td> 
                      </tr>
                 </table>
             </div>
         </div>
         <!-- 2nd div box -->
         <div id="contentbox">
-           <h1>My Things</h1>
-           <div id="my2">Add the activities and tracks that you want to use in your calendar. By registering your workouts with greater detail using different tracks etc. you will be able to get more detailed statistics.</div>
-          
+           <h1>Meals</h1>
+           <div id="my2">Here you can add your own meals. Click the button to add new meals or click the name of a meal to change the information.</div>
+           <br/>
+           <br/>
+           <br/>
+            <a href="Addmeal.html"><button id="contentbox_btn" onclick="add_meal()" >ADD MEAL</button></a>
+            <table id="checkbox_table" cellspacing="0" cellpadding="0">
+            <tbody>
+                <tr>
+                    <td width:25>
+                        <input type="checkbox" name="per_portion" id="per_portion" value="check" onclick="check()" checked="checked">  
+                    </td>
+                    <td class="clr"><label for="per_portion">Show nutrition contents per portion (if not checked the contents of all portions are shown combined)</label></td>
+                </tr>
+            </tbody>
+            </table>
+           <div id="My_provisions_table">
+            <table id="cardiolist_table" cellspacing="2" cellpadding="3">
+                <tbody>
+                    <tr>
+                        <th id="uractivities" width="20%">Name</th>
+                        <th id="uractivities" width="10%">Portions</th>
+                        <th id="uractivities" width="15%">Calories(kcal)</th>
+                        <th id="uractivities" width="15%">Protein(g)</th>
+                        <th id="uractivities" width="13%">Fat(g)</th>
+                        <th id="uractivities" width="16%">Carbo Hydrates<br/>(g)</th>
+                        <th id="uractivities" width="13%">&nbsp;</th>
+                    </tr>
+                    <!-- <tr id="no_provision">
+                        <td id="no_provision"  colspan="7">There are no saved meals.</td>
+                    </tr> -->
+                    </tbody>
+                    </table>
+           </div>
+           </div>
         </div>
     </div>
-    <div class="footer">
-        <div class="footer_left">
-          <div class="footer_left_img">
-            <img src="https://www.shapelink.com/images/logo.png" alt="logo" />
-          </div>
-          <p>
-            All rights reserved © 2002 - 2020 <br />
-            Developed by Wellnesstech Labs International AB
-          </p>
-          <p>
-            <a href="">Contact Us</a>
-          </p>
-          <p>
-            <a href="">Terms & Conditions</a>
-          </p>
-        </div>
-        <div class="footer_right">
-          <div class="footer_right_img">
-            <img src="fb.png" alt="facebook" class="fb" />
-          </div>
-          <div class="footer_right_img">
-            <img src="inst.png" alt="facebook" />
-          </div>
-          <div class="footer_right_img">
-            <img src="link.png" alt="facebook" />
-          </div>
-          <div class="footer_right_img">
-            <img src="apple.png" alt="facebook" />
-          </div>
-          <div class="footer_right_img">
-            <img src="android.png" alt="facebook" />
-          </div>
-        </div>
-      </div>
-      <!-- <div class="modal_bg">
-        <div class="modal">
-          <div class="modal_inner">
-            <p>LOGIN</p>
-            <input type="email" id="email" />
-            <br />
-            <input type="password" id="" />
-            <div class="checkbox">
-              <p><input type="checkbox" /> Log in automatically next time</p>
-            </div>
-            <button class="btn"><a href="">Login</a></button>
-            <p class="or">or</p>
-            <div class="fb_login">
-              <i class="fab fa-facebook-square"></i>
-              <p>Login with Facebook</p>
-            </div>
-          </div>
-          <i class="fa fa-times modal_close"></i>
-        </div>
-      </div> -->
-    <script src="Mythings.js"></script> 
+    <script src="Meals.js"></script> 
 </body>
 </html>

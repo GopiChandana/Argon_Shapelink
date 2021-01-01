@@ -301,6 +301,7 @@ div{
   .trash{
       width:21px;
       height:21px;
+<<<<<<< HEAD
   }
   .footer {
     width: 100%;
@@ -378,3 +379,6 @@ div{
     cursor: pointer;
   }
   
+=======
+  }
+>>>>>>> c11e2207fe351273cbf9f4a7bad926536f4be604

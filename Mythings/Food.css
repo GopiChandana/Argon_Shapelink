@@ -10,7 +10,10 @@
     position: fixed;
     top: 0%;
     width:100vw;
+<<<<<<< HEAD
     z-index: 9999999;
+=======
+>>>>>>> c11e2207fe351273cbf9f4a7bad926536f4be604
 }
 .navbar__top {
     display: flex;
