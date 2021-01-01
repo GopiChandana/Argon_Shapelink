@@ -125,7 +125,7 @@
                <tbody>
                    <tr>
                        <td colspan="2">
-                           <div class="meal_info">Information abut the meal</div>
+                           <div class="meal_info">Information about the meal</div>
                        </td>
                    </tr>
                    <tr>
@@ -134,19 +134,19 @@
                        </td>
                        <td>
                            <input type="text" name="meal_info_input" id="meal_info_input" class="meal_info_input"/>
-                           "&nbsp;"
+                           &nbsp;
                        </td>
                    </tr>
                    <tr>
-                       <tr>
-                           <td width="150">
-                               <b>DESCRIPTION</b>
+                       <!-- <tr>
+                           <td >
+                               
                           
-                           <textarea name="description" id="description" class="meal_info_textarea">
+                            <b>DESCRIPTION</b> <textarea name="description" id="description" class="meal_info_textarea">
 
-                           </textarea>"&nbsp;"
+                           </textarea>&nbsp;
                         </td>
-                       </tr>
+                       </tr> -->
                        <td width="150">
                            <b>Portions</b>
                        </td>
@@ -176,50 +176,134 @@
                             </select>
                        </td>
                    </tr>
-                   <tr>
+                   <tr >
                        <td colspan="2">
                            <div class="meal_info">Ingredients</div>
                        </td>
                    </tr>
                    <tr>
-                       <td colspan="2">To compose your meal, pick the provisions in the list boxes and click on "Add".</td>
+                       <td colspan="4" >To compose your meal, pick the provisions in the list boxes and click on "Add".</td>
                    </tr>
-                   <tr>
+                   <tr style="margin-top:5px;">
                        <td width="150">
                            <b>Category</b>
                        </td>
-                       <td colspan="2">
-                        <select name="category_id" class="select" id="category_id" style="width: 200px;">
+                       <td colspan="2" >
+                        <select name="category_id" class="select" id="category_id" style="width: 200px;" onclick="selectclick()">
 		  			  	<option value="Baby food">Baby food</option>
 		  			  	<option value="Baked Products">Baked Products</option>
-		  			  	<option value="Beef Products">Beef Products</option>
-		  			  	<option value="Beverages">Beverages</option>
-		  			  	<option value="Breakfast Cereals">Breakfast Cereals</option>
-		  			  	<option value="123">Cereal Grains and Pasta</option>
-		  			  	<option value="124">Dairy and Egg Products</option>
-		  			  	<option value="125">Ethnic Foods</option>
-		  			  	<option value="126">Fast Foods</option>
-		  			  	<option value="127">Fats and Oils</option>
-		  			  	<option value="128">Finfish and Shellfish Products</option>
-		  			  	<option value="129">Fruits and Fruit Juices</option>
-		  			  	<option value="130">Lamb, Veal, and Game Products</option>
-		  			  	<option value="131">Legumes and Legume Products</option>
-		  			  	<option value="132">Meals, Entrees, and Sidedishes</option>
-		  			  	<option value="133">Nut and Seed Products</option>
-		  			  	<option value="142">Other</option>
-		  			  	<option value="134">Pork Products</option>
-		  			  	<option value="135">Poultry Products</option>
-		  			  	<option value="136">Sausages and Luncheon Meats</option>
-		  			  	<option value="137">Snacks</option>
-		  			  	<option value="138">Soups, Sauces, and Gravies</option>
-		  			  	<option value="139">Spices and Herbs</option>
-		  			  	<option value="140">Sweets</option>
-		  			  	<option value="141">Vegetables and Vegetable Products</option>
-		  		  	</select>  
+                        <option value="Snacks">Snacks</option>
+                        <option value="Beverages">Beverages</option>
+                        <option value="Fruits and Fruit Juices">Fruits and Fruit Juices</option>
+                       
+                        </select> 
+                         
                        </td>
+                       <td colspan="2" style="display: none;" id="id_0" >
+                        <select name="category_id0" class="select" id="category_id0" style="width: 400px;margin-top:5px;" >
+		  			  	<option value="Baby food,apple yogurt desert,strained">Baby food,apple yogurt desert,strained</option>
+		  			  	<option value="Baby food,juice,apple,with calcium">Baby food,juice,apple,with calcium</option>
+                        <option value="Baby food,banana juice with lowfat yogurt">Baby food,banana juice with lowfat yogurt</option>
+                        <option value="Baby food,cereal,rice dry">Baby food,cereal,rice dry</option>
+                        <option value="Baby food,corn and sweet potatoes,strained">Baby food,corn and sweet potatoes,strained</option>
+                        
+                        </select> 
+                         
+                       </td>
+                    </td>
+                    <td colspan="2" style="display: none;" id="id_1" >
+                     <select name="category_id1" class="select" id="category_id1" style="width: 400px;margin-top:5px;" >
+                         <option value="Biscuits,plain or buttermilk,drymix">Biscuits,plain or buttermilk,drymix</option>
+                         <option value="ARCHWAY HOME STYLE COOKIES,Date filled Oatmeal">ARCHWAY HOME STYLE COOKIES,Date filled Oatmeal </option>
+                     <option value="Cookies,Chocolate-chip">Cookies,Chocolate-chip</option>
+                     <option value="Crackers,Whole wheat">Crackers,Whole wheat</option>
+                     <option value="Doughnuts,with cream filling">Doughnuts,with cream filling</option>
+                     
+                     </select> 
+                      
+                    </td>
+                    <td colspan="2" style="display: none;" id="id_2" >
+                        <select name="category_id2" class="select" id="category_id2" style="width: 400px;margin-top:5px;" >
+                            <option value="Popcorn,microwave,low fat and sodium">Popcorn,microwave,low fat and sodium</option>
+                            <option value="ARCHWAY HOME STYLE COOKIES,Date filled Oatmeal">KELLOG'S Nutrigain Cereal bars,fruit</option>
+                        <option value="Potato chips,cheese flavour">Potato chips,cheese flavour</option>
+                        <option value="Rice cakes">Rice cakes</option>
+                        <option value="Formulated bar, POWER BAR,chocolate">Formulated bar, POWER BAR,chocolate</option>
+                        
+                        </select> 
+                         
+                       </td>
+                       <td colspan="2" style="display: none;" id="id_3" >
+                        <select name="category_id3" class="select" id="category_id3" style="width: 400px;margin-top:5px;" >
+                            <option value="Coffee,brewed,espresso,restaurant prepared">Coffee,brewed,espresso,restaurant prepared</option>
+                            <option value="Alchoholic beverage,wine,light">Alchoholic beverage,wine,light</option>
+                        <option value="Chocolate syrup,prepared with whole milk">Chocolate syrup,prepared with whole milk</option>
+                        <option value="Carbonated beverage,Orange">Carbonated beverage,Orange</option>
+                        <option value="Fruit flavoured mix drink,powder,unsweetened">Fruit flavoured mix drink,powder,unsweetened</option>
+                        
+                        </select> 
+                         
+                       </td>
+                       <td colspan="2" style="display: none;" id="id_4" >
+                        <select name="category_id4" class="select" id="category_id4" style="width: 400px;margin-top:5px;" >
+                            <option value="Mango nectar,canned">Mango nectar,canned</option>
+                            <option value="Orange juice,raw">Orange juice,raw</option>
+                        <option value="Apples raw with skin">Apples raw with skin</option>
+                        <option value="Grapefruit juice,white,canned,sweetened">Grapefruit juice,white,canned,sweetened</option>
+                        <option value="Strawberries,raw">Strawberries,raw</option>
+                        
+                        </select> 
+                         
+                       </td>
+                      
+                      
                    </tr>
+                   <tr>
+                   <td>
+                       <b>Amount</b>
+                   </td>
+                   <td>
+                       <div style="display: flex;">
+                        <!--  -->
+                           <div><input id="units_amt" type="text" style="width:50px"  /></div>
+                           <b style="font-size: 15px;margin-left:10px;">g</b>
+                       </div>
+                   </td>
+                   </tr>
+                   <tr>
+                      <td colspan="2">
+                          <button id="add_pagebtn" onclick="add_amt()">ADD</button>
+                          <!-- <div id="loading" style="display:block">Loading...</div> -->
+                      </td> 
+                   </tr>
+                   <tr>
+                    <td colspan="2"><div class="meal_info">Added ingredients</div></td>
+                  </tr>
                </tbody>
            </table>
+           <div >
+               <table class="exerciselist" id="exerciselist_table" width="100%"  cellspacing="0">
+              
+            <tbody>
+                <tr id="exerciselist_tr" >
+                <td width="20%"><b id="amt_name">Name</b></td>
+                <td width="15%"><b id="amt_amt">Amount</b></td>
+                <td width="18%"><b id="amt_cal">Calories (kcal)</b></td>
+                <td width="15%"><b id="amt_pro">Protein (g)</b></td>
+                <td width="15%"><b id="amt_fat">Fat (g)</b></td>
+                <td width="20%"><b id="amt_carbo">Carbo Hydrates (g)</b></td>
+                <td width="20%"><b id="amt_del">DELETE</b></td>
+            </tr>
+            <tr id="no_ing">
+                <td colspan="7" >There are no added ingredients</td>
+            </tr>
+            </tbody>
+        </table>
+        <table cellspacing="0" cellpadding="0" class="form" width="100%"><tbody><tr><td colspan="2">
+            <input type="submit" name="commit" value="Save" class="submit">&nbsp;
+            <input class="submit" value="Cancel" type="button" onclick="cancell()"></td>
+      </tr></tbody></table>
+            </div>
           
         </div>
     </div>

@@ -95,7 +95,7 @@ function dell(c_row)
    //       }
          var x1 = document.getElementById(c_row);
            x1.style.display="none";
-         
+            x1.style.transition="visibility 2s, opacity 0.5s linear" ;
          
       // }
    // }

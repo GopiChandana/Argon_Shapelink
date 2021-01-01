@@ -6,6 +6,7 @@
     position: fixed;
     top: 0%;
     width:100vw;
+    z-index: 9999999999;
 }
 .navbar__top {
     display: flex;
@@ -168,15 +169,26 @@ th:hover{
     width:760px;
     margin:-4px 0px 10px;
     margin-left:30px;
+    background-color: #ffffff;
+}
+#contentbox td:hover{
+    background-color: white;
+}
+#contentbox td{
+    background-color: white;
+    color:black;
 }
 #my2{
     color:#000000;
     font-size: 11px;
+    margin-left:10px;
+    margin-bottom: 15px;
 }
 h1{
     color:#555555;
     font-weight: lighter;
     font-size:24px;
+    margin-left:10px;
 }
 i{
     visibility: hidden;
@@ -186,12 +198,12 @@ i{
     border-collapse: separate;
     box-sizing: border-box;
     text-indent: initial;
-    margin: 0px 0px 300px;
+    /* margin: 0px 0px 300px; */
     padding: 0px;
     font-family: lato, Arial, Helvetica, sans-serif;
     letter-spacing: 0px;
     font-size: 12px;
-    background: #fff;
+    /* background: #fff; */
 }
 .meal_info{
     text-transform: uppercase;
@@ -206,7 +218,7 @@ i{
     padding: 0px 3px;
     display: inline-block;
     text-align: start;
-    appearance: textfield;
+    /* appearance: textfield; */
     font-size: 14px;
     line-height: 26px;
     height: 28px;
@@ -222,7 +234,7 @@ i{
     display: inline-block;
     text-align: start;
     appearance: textarea;
-    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    /* background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59)); */
     color: -internal-light-dark(black, white);
     flex-direction: column;
     resize: auto;
@@ -238,3 +250,55 @@ i{
     padding: 2px;
     border-radius: 2px;
 }
+#add_pagebtn{
+    width:70px;
+    height:30px;
+}
+#loading {
+    background: url(https://www.shapelink.com/images/indicator.gif) no-repeat;
+    padding: 3px 0px 3px 25px;
+    margin: 0px;
+}
+.exerciselist .header {
+    font-weight: bold;
+}
+.exerciselist  .header td {
+    /* display: table-row; */
+    vertical-align: inherit;
+    border-color: inherit;
+}
+div{
+    display:block;
+}
+.exerciselist{
+    display: table;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+    margin-top:2px;
+    padding: 0px;
+    font-family: lato, Arial, Helvetica, sans-serif;
+    letter-spacing: 0px;
+    font-size: 12px;
+     /* background: #dddddd;  */
+   
+}
+
+.exerciselist>tbody>tr td 
+   {
+    border: 1px solid #dddddd;
+    text-align: left;
+    /* padding: 8px; */
+    
+  }
+  .exerciselist>tbody>tr td >b>i{
+      width:21px;
+      height:21px;
+      color:black;
+  }
+  .trash{
+      width:21px;
+      height:21px;
+  }

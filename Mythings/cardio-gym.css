@@ -168,6 +168,7 @@ th:hover{
     margin:-4px 0px 10px;
     margin-left:30px;
     margin-right:20px;
+   
 }
 #my2{
     color:#000000;
@@ -205,8 +206,8 @@ i{
     font-size:12px;
     width:312px;
     height:fit-content;
-    margin-top:100vw;
-    margin-left:24vw;
+     margin-top:10vw; 
+     /* margin-left:4vw;  */
 
 }
 #cardiolist_table{
