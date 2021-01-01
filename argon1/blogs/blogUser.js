@@ -35,7 +35,7 @@ const init = function (e) {
           </div>
           <div class="myblogs_container_edit">
               <img src=${"pencil.png"} alt="pencil"/>
-                <p><a href="">Edit</a></p>
+                <p id="updateId"><a href="#">Edit</a></p>
                 <img src=${"delete.png"} alt="delete" />
                 <p id="deleteId"><a href="#">Delete</a></p>
                 <img src=${"share.png"} alt="share"/>
@@ -60,6 +60,18 @@ const init = function (e) {
     window.location.reload();
   }
   deleteId.addEventListener("click", deleteData);
+
+  //   for edating the data in localStorage
+  var updateId = document.querySelector("#updateId");
+  var myblogs_data = JSON.parse(localStorage.getItem("myBlogs"));
+  function updateId1() {
+    var id1 = myblogs_data[0].id;
+    console.log(id1);
+    const filtered = myblogs_data.filter((item) => item.id !== id1);
+    localStorage.setItem("myBlogs", JSON.stringify(filtered));
+    window.location.reload();
+  }
+  updateId.addEventListener("click", updateId1);
 };
 
 document.addEventListener("DOMContentLoaded", function () {

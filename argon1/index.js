@@ -31,3 +31,17 @@ login_button.addEventListener("click", function () {
 modal_close.addEventListener("click", function () {
   modal_bg.classList.remove("modal_bg_active");
 });
+
+// for the login passing from one page to another page
+const init = function (e) {
+  let btn = document.querySelector(".btn");
+  let username = document.getElementById("email");
+  btn.addEventListener("click", function () {
+    localStorage.setItem("username", JSON.stringify(username.value));
+    window.document.location = "./blogs/blogs.html";
+  });
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+  init();
+});
