@@ -13,19 +13,19 @@
             <div class="left__side">
                 <img class="navbar__logo" src="https://www.shapelink.com/images/logo.png">
                 <div class="link__div  current__page__div">
-                    <a class="top__links  current__page__link"  id="exercise_log" href="https://example.com">Exercise Log</a>
+                    <a class="top__links  current__page__link blck" style="color:gray;" id="exercise_log" href="https://example.com">Exercise Log</a>
                 </div>
                 <div class="link__div">
-                    <a class="top__links" href="https://example.com">Results</a>
+                    <a class="top__links blck" style="color:gray;" href="https://example.com">Results</a>
                 </div>
                 <div class="link__div">
-                    <a class="top__links" href="https://example.com">Challenges</a>
+                    <a class="top__links blck" style="color:gray;" href="https://example.com">Challenges</a>
                 </div>
                 <div class="link__div">
-                    <a class="top__links" href="https://example.com">Friends</a>
+                    <a class="top__links blck" style="color:gray;" href="https://example.com">Friends</a>
                 </div>
                 <div class="link__div">
-                    <a class="top__links" href="https://example.com">Groups</a>
+                    <a class="top__links blck" style="color:gray;" href="https://example.com">Groups</a>
                 </div>
             </div>
             <div class="right__side">
@@ -37,7 +37,7 @@
                 <a class="bottom__link " href="https://example.com">Show Calendar</a>
             </div>
             <div class="link__div">
-                <a class="bottom__link current__subpage__link" href="https://example.com">My Things</a>
+                <a class="bottom__link current__subpage__link" href="Mythings.html">My Things</a>
             </div>
             <div class="link__div">
                 <a class="bottom__link" href="https://example.com">Routines</a>
@@ -62,10 +62,10 @@
                         <th>CATEGORIES</th>
                     </tr>
                     <tr>
-                       <td>Cardio<i class="fa fa-caret-left" id="c1"></i></a></td> 
+                       <td><a href="cardio.html">Cardio<i class="fa fa-caret-left" id="c1"></i></a></td> 
                     </tr>
                     <tr>
-                        <td><a href="cardio-gym.html">Cardio - Gym<i class="fa fa-caret-left" id="c2"></i></a></td>
+                        <td>Cardio - Gym<i class="fa fa-caret-left" id="c2"></i></td>
                     </tr>
                     <tr>
                         <td>Gym Class<i class="fa fa-caret-left" id="c3"></i></td>
@@ -109,10 +109,10 @@
                         <th>NUTRITION</th>
                     </tr>
                     <tr>
-                       <td>Food<i class="fa fa-caret-left" ></i></td> 
+                       <td><a href="Food.html">Food<i class="fa fa-caret-left" ></i></a></td> 
                     </tr>
                     <tr>
-                        <td>Meals<i class="fa fa-caret-left" ></i></td> 
+                        <td><a href="Meals.html">Meals<i class="fa fa-caret-left" ></i></a></td> 
                      </tr>
                 </table>
             </div>
@@ -719,26 +719,10 @@
                       <a><img src="https://www.shapelink.com/images/icons/cross.png" alt="cross" onclick="del('Running - With poles')"/></a>
                     </td>
                 </tr>
-                <tr id="Swimming">
-                    <td class="first_td">
-                        <div>
-                           <img src="https://www.shapelink.com/images/diary_icons/128.png"/>
-                        </div>
-                    </td>
-                    <td class="sec_td">
-                       <a href="backcountry.html">Swimming</a>
-                    </td>
-                    <td class="third_td">
-                        <a><img src="https://www.shapelink.com/images/icons/pencil.png" alt="pencil" onclick="edit()"/></a>
-                    </td>
-                    <td class="third_td">
-                      <a><img src="https://www.shapelink.com/images/icons/cross.png" alt="cross" onclick="del('Swimming')"/></a>
-                    </td>
-                </tr>
                 <tr id="Walking">
                     <td class="first_td">
                         <div>
-                           <img src="https://www.shapelink.com/images/diary_icons/20.png"/>
+                           <img src="https://www.shapelink.com/images/diary_icons/128.png"/>
                         </div>
                     </td>
                     <td class="sec_td">
@@ -751,6 +735,22 @@
                       <a><img src="https://www.shapelink.com/images/icons/cross.png" alt="cross" onclick="del('Walking')"/></a>
                     </td>
                 </tr>
+                <tr id="Swimming">
+                    <td class="first_td">
+                        <div>
+                           <img src="https://www.shapelink.com/images/diary_icons/20.png"/>
+                        </div>
+                    </td>
+                    <td class="sec_td">
+                       <a href="backcountry.html">Swimming</a>
+                    </td>
+                    <td class="third_td">
+                        <a><img src="https://www.shapelink.com/images/icons/pencil.png" alt="pencil" onclick="edit()"/></a>
+                    </td>
+                    <td class="third_td">
+                      <a><img src="https://www.shapelink.com/images/icons/cross.png" alt="cross" onclick="del('Swimming')"/></a>
+                    </td>
+                </tr>
                 
               </tbody>
             </table>
@@ -759,6 +759,60 @@
 
         </div>
     </div>
+    <div class="footer">
+        <div class="footer_left">
+          <div class="footer_left_img">
+            <img src="https://www.shapelink.com/images/logo.png" alt="logo" />
+          </div>
+          <p>
+            All rights reserved © 2002 - 2020 <br />
+            Developed by Wellnesstech Labs International AB
+          </p>
+          <p>
+            <a href="">Contact Us</a>
+          </p>
+          <p>
+            <a href="">Terms & Conditions</a>
+          </p>
+        </div>
+        <div class="footer_right">
+          <div class="footer_right_img">
+            <img src="fb.png" alt="facebook" class="fb" />
+          </div>
+          <div class="footer_right_img">
+            <img src="inst.png" alt="facebook" />
+          </div>
+          <div class="footer_right_img">
+            <img src="link.png" alt="facebook" />
+          </div>
+          <div class="footer_right_img">
+            <img src="apple.png" alt="facebook" />
+          </div>
+          <div class="footer_right_img">
+            <img src="android.png" alt="facebook" />
+          </div>
+        </div>
+      </div>
+      <!-- <div class="modal_bg">
+        <div class="modal">
+          <div class="modal_inner">
+            <p>LOGIN</p>
+            <input type="email" id="email" />
+            <br />
+            <input type="password" id="" />
+            <div class="checkbox">
+              <p><input type="checkbox" /> Log in automatically next time</p>
+            </div>
+            <button class="btn"><a href="">Login</a></button>
+            <p class="or">or</p>
+            <div class="fb_login">
+              <i class="fab fa-facebook-square"></i>
+              <p>Login with Facebook</p>
+            </div>
+          </div>
+          <i class="fa fa-times modal_close"></i>
+        </div>
+      </div> -->
     <script src="cardio.js"></script> 
 </body>
 </html>
