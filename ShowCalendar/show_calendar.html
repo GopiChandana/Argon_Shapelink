@@ -112,7 +112,7 @@
                 <div class="day__box"></div>
                 <div class="day__box"></div>
                 <div class="day__box"></div>
-                <div id="day1__box" class="day__box date__box">
+                <div id="day1__box " class="day__box date__box ">
                     <div id="day1__task" class="day__task"></div>
                     <div id="day1__states" class="day__states">
                         <p class="day__number">1</p>
@@ -717,26 +717,267 @@
             </div>
         </div>
     </div>
-    <div id="shadow"></div>
+
+    <!-- <div class=“footer”>
+        <div class=“footer_left”>
+          <div class=“footer_left_img”>
+            <img src=“https://www.shapelink.com/images/logo.png” alt=“logo” />
+          </div>
+          <p>
+            All rights reserved © 2002 - 2020 <br />
+            Developed by Wellnesstech Labs International AB
+          </p>
+          <p>
+            <a href=“”>Contact Us</a>
+          </p>
+          <p>
+            <a href=“”>Terms & Conditions</a>
+          </p>
+        </div>
+        <div class=“footer_right”>
+          <div class=“footer_right_img”>
+            <img src=“../fb.png” alt=“facebook” class=“fb” />
+          </div>
+          <div class=“footer_right_img”>
+            <img src=“../inst.png” alt=“facebook” />
+          </div>
+          <div class=“footer_right_img”>
+            <img src=“../link.png” alt=“facebook” />
+          </div>
+          <div class=“footer_right_img”>
+            <img src=“../apple.png” alt=“facebook” />
+          </div>
+          <div class=“footer_right_img”>
+            <img src=“../android.png” alt=“facebook” />
+          </div>
+        </div>
+      </div> -->
+    <div id="shadow1"></div>
     <div id="popup__window" class="hide">
         <button id="popup__close1" class="popup__close">X</button>
-        <button id="weight">Weight</button>
-        <button>Cardio</button>
-        <button>Cardio Gym</button>
-        <button>Group Training</button>
-        <button>Sports</button>
-        <button>Import Training</button>
-        <button>Templates</button>
+        <div>
+            <div class="popup__titlebar">
+                <p class="popup__titletext1">Add to diary</p>
+                <p class="popup__titletext2">Friday 1 January 2021</p>
+                <p class="popup__titletext3">Change date</p>
+            </div>
+            <div class="container__div">
+                <div class="popup__options__left">
+                    <div class="popup__options__left__div1">
+                        <p>Training</p>
+                    </div>
+                    <div class="popup__options__left__div2">
+                        <div class="option__div" id="weight">
+                            <div>
+                                <img class="icon_red" src="https://www.shapelink.com/images/diary_icons/55.png">
+                            </div>
+                            <div>
+                                <p class="option__title">Weight</p>
+                                <p class="option__para">For example exercises in the gym push ups at home or crossfit</p>
+                            </div>
+                        </div>
+                        <div class="option__div" id="cardio">
+                            <div>
+                                <img class="icon_blue" src="https://www.shapelink.com/images/diary_icons/2.png">
+                            </div>
+                            <div>
+                                <p class="option__title">Cardio</p>
+                                <p class="option__para">For example running swimming or nordic skiing</p>
+                            </div>
+                        </div>
+                        <div class="option__div" id="cardio__gym">
+                            <div>
+                                <img class="icon_green" src="https://www.shapelink.com/images/diary_icons/29.png">
+                            </div>
+                            <div>
+                                <p class="option__title">Cardio Gym</p>
+                                <p class="option__para">For example treadmill, crosstrainer or tair climber</p>
+                            </div>
+                        </div>
+                        <div class="option__div" id="group_training">
+                            <div>
+                                <img class="icon_purple" src="https://www.shapelink.com/images/diary_icons/4.png">
+                            </div>
+                            <div>
+                                <p class="option__title">Group Training</p>
+                                <p class="option__para">For example aerobics, spinn or zumba</p>
+                            </div>
+                        </div>
+                        <div class="option__div" id="sports">
+                            <div>
+                                <img class="icon_orange" src="https://www.shapelink.com/images/diary_icons/22.png">
+                            </div>
+                            <div>
+                                <p class="option__title">Sports</p>
+                                <p class="option__para">For example tennis, soccer or ice hockey</p>
+                            </div>
+                        </div>
+                        <div class="option__div" id="import__raining">
+                            <div>
+                                <img class="icon_grey" src="https://www.shapelink.com/images/diary_icons/155.png">
+                            </div>
+                            <div>
+                                <p class="option__title">Import Training</p>
+                                <p class="option__para">Important training from Garmin units, Runkeeper, Nikeplus etc</p>
+                            </div>
+                        </div>
+                        <div class="option__div" id="templates">
+                            <div>
+                                <img class="icon_grey" src="https://www.shapelink.com/images/diary_icons/25.png">
+                            </div>
+                            <div>
+                                <p class="option__title">Templates</p>
+                                <p class="option__para">Easily add your premade workout templates</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__options__right">
+                    <div class="popup__options__left__div1">
+                        <p>Other notations</p>
+                    </div>
+                    <div class="popup__options__left__div2">
+                        <div class="option__div">
+                            <div>
+                                <img class="icon_grey" src="https://www.shapelink.com/images/diary_icons/30.png">
+                            </div>
+                            <div>
+                                <p class="option__title">Nutrition</p>
+                                <p class="option__para">Keep track of your nutrition intake</p>
+                            </div>
+                        </div>
+                        <div class="option__div">
+                            <div>
+                                <img class="icon_grey" src="https://www.shapelink.com/images/diary_icons/26.png">
+                            </div>
+                            <div>
+                                <p class="option__title">Weight</p>
+                                <p class="option__para">Keep track of your weight</p>
+                            </div>
+                        </div>
+                        <div class="option__div">
+                            <div>
+                                <img class="icon_grey" src="https://www.shapelink.com/images/diary_icons/139.png">
+                            </div>
+                            <div>
+                                <p class="option__title">Steps</p>
+                                <p class="option__para">Register your daily amount of steps</p>
+                            </div>
+                        </div>
+                        <div class="option__div">
+                            <div>
+                                <img class="icon_grey" src="https://www.shapelink.com/images/diary_icons/25.png">
+                            </div>
+                            <div>
+                                <p class="option__title">Text and photo-notation</p>
+                                <p class="option__para">Comments this day and upload images</p>
+                            </div>
+                        </div>
+                        <div class="option__div">
+                            <div>
+                                <img class="icon_grey" src="https://www.shapelink.com/images/diary_icons/test.png">
+                            </div>
+                            <div>
+                                <p class="option__title">Test</p>
+                                <p class="option__para">Physical test values for followup</p>
+                            </div>
+                        </div>
+                        <div class="option__div">
+                            <div>
+                                <img class="icon_grey" src="https://www.shapelink.com/images/diary_icons/80.png">
+                            </div>
+                            <div>
+                                <p class="option__title">Measurements</p>
+                                <p class="option__para">For example biceps, waist or thighs</p>
+                            </div>
+                        </div>
+                        <div class="option__div">
+                            <div>
+                                <img class="icon_grey" src="https://www.shapelink.com/images/diary_icons/85.png">
+                            </div>
+                            <div>
+                                <p class="option__title">Pulse</p>
+                                <p class="option__para">Keep track of your resting pulse</p>
+                            </div>
+                        </div>
+                        <div class="option__div">
+                            <div>
+                                <img class="icon_grey" src="https://www.shapelink.com/images/diary_icons/187.png">
+                            </div>
+                            <div>
+                                <p class="option__title">Injuries</p>
+                                <p class="option__para">Keep track of the days when you can't exercise</p>
+                            </div>
+                        </div>
+                        <div class="option__div">
+                            <div>
+                                <img class="icon_grey" src="https://www.shapelink.com/images/diary_icons/188.png">
+                            </div>
+                            <div>
+                                <p class="option__title">Daily form</p>
+                                <p class="option__para">Describe your dail form and follow your trend</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="hide" id="popup__weight">
-          <button id="popup__close2" class="popup__close">X</button>
-          <button onclick="back(this);" id="back__btn" class="back__btn">BACK</button>
-          <input type="text" id="title" placeholder="Enter Title">
-          <input type="number" id="time" placeholder="Enter Time">
-          <input type="text" id="warmup" placeholder="Enter Warmup">
-          <input type="text" id="comment" placeholder="Enter Comment">
-          <img width="50px" src="https://i.ytimg.com/vi/aQ4CE0XA1AA/maxresdefault.jpg">
-          <button id="save__btn">SAVE</button>
+            <div class="popup__titlebar">
+                <button id="popup__close2" class="popup__close">X</button>
+                <div class="weight__titlebar">
+                    <p class="popup__titletext1">Add to diary</p>
+                    <p class="popup__titletext2">Friday 1 January 2021</p>
+                    <p class="popup__titletext3">Change date</p>
+                </div>
+                <div class="back__btn__div">
+                    <button onclick="back(this);" id="back__btn" class="back__btn">GO BACK</button>
+                    <p class="popup__titletext2">Go back</p>
+                </div>
+            </div>
+            <div class="weight__bg__div">
+                <div>
+                    <div class="weight__div1">
+                        <p class="weight__title">Strength Training</p>
+                    </div>
+                    <div class="input__bg__div">
+                        <div class="input__bg__left">
+                            <div class="margin__div">
+                                <p class="header">Workout title</p>
+                                <input type="text" id="title" placeholder="Enter Title">
+                            </div>
+                            <div class="margin__div display__flex">
+                                <div class="margin__sub__div">
+                                    <p class="header">Time</p>
+                                    <input type="number" id="time" placeholder="Enter Time">
+                                </div>
+                                <div class="margin__sub__div">
+                                    <p class="header">Selected icon</p>
+                                    <div>
+                                        <img class="icon_red" src="https://www.shapelink.com/images/diary_icons/55.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="margin__div">
+                                <p class="header">Warm up</p>
+                                <input type="text" id="warmup" placeholder="Enter Warmup">
+                            </div>
+                        </div>
+                        <div class="input__bg__left">
+                            <p  class="header">Comment</p>
+                            <textarea type="text" id="comment" placeholder="Enter Comment"></textarea>
+                        </div>
+                    </div>
+                    <div class="save__bg__div">
+                        <div>
+                            <button id="save__btn">SAVE</button>
+                        </div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="show_calendar.js"></script>
