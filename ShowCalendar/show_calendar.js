@@ -44,8 +44,8 @@ var total__task = []
 
 popup = () => {
   console.log("popup clicked")
-  var shadow = document.getElementById("shadow");
-  shadow.setAttribute("class", "shadow")
+  var shadow1 = document.getElementById("shadow1");
+  shadow1.setAttribute("class", "shadow1")
   popup__window()
 }
 
@@ -58,12 +58,20 @@ popup__weight = () => {
   console.log("popup__weight clicked")
   var popup__weight = document.getElementById("popup__weight");
   popup__weight.setAttribute("class", "popup__weight")
+
+  var popup__window = document.getElementById("popup__window");
+  popup__window.setAttribute("class", "hide")
 }
 
 back = (e) => {
   console.log("Back button clicked")
-  var parent = e.parentNode;
-  parent.setAttribute("class", "hide")
+  // var parent = e.parentNode;
+  // parent.setAttribute("class", "hide")
+
+  var popup__weight = document.getElementById("popup__weight");
+  popup__weight.setAttribute("class", "hide")
+
+  popup__window()
 }
 
 save = (e) => {
@@ -107,6 +115,8 @@ save = (e) => {
 
   var parent = document.getElementById("save__btn").parentElement;
   parent.setAttribute("class", "hide")
+
+  close()
   return title__data, time__data
 }
 
@@ -114,7 +124,7 @@ close = () => {
   console.log("close button clicked")
   var popup__window = document.getElementById("popup__window");
   popup__window.setAttribute("class", "hide")
-  shadow.setAttribute("class", "hide")
+  shadow1.setAttribute("class", "hide")
   var popup__weight = document.getElementById("popup__weight");
   popup__weight.setAttribute("class", "hide")
 }
@@ -129,6 +139,7 @@ weight.addEventListener("click", popup__weight)
 back__btn.addEventListener("click", back)
 save__btn.addEventListener("click", save)
 popup__close1.addEventListener("click", close)
+popup__close2.addEventListener("click", close)
 add__to__calendar.addEventListener("click", popup) 
 
 return_id = (e) => {
@@ -167,7 +178,9 @@ get_Task_List = () => {
 }
 get_Task_List()
 
-console.log(total__task)
+// console.log(total__task)
+// var up = document.getElementById("up");
+// up.addEventListener("click")
 
 display = () => {
   for(i = 0; i < total__task.length; i++){
@@ -189,7 +202,6 @@ display = () => {
     console.log("temp_exercise: " + temp_exercise)
     console.log("temp_content: " + temp_content)
 
-
     var ex_logo = document.createElement("img");
     ex_logo.setAttribute("src", temp_icon);
     ex_logo.setAttribute("class", "icon");
@@ -209,3 +221,4 @@ display = () => {
   }
 }
 display()
+
