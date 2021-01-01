@@ -265,12 +265,8 @@ i{
     box-sizing: border-box;
     text-indent: initial;
     background-color: white;
-    color:#222222
     /* border-spacing: 2px; */
     
-}
-#cardiolist_table>tbody>tr td{
-    color:black
 }
 #uractivities{
     display:table-cell;
@@ -298,8 +294,4 @@ i{
 }
 label{
     font-size:12px;
-}
-.trash{
-    width:21px;
-    height:21px;
 }

@@ -4,7 +4,7 @@ var id_22=document.getElementById("id_2")
 var id_33=document.getElementById("id_3")
 var id_44=document.getElementById("id_4")
 var id_55=document.getElementById("id_5")
-
+var meals_arr=[];
 
 function selectclick()
 {
@@ -93,35 +93,35 @@ function add_amt()
               console.log(a)
               
               }
-              if(amt<50)
+              if(amt<=50)
               {
-                  dum1=548;
+                  dum1=5.48;
                   dum2=10.5;
                   dum3=53.7;
                   dum4=45;
               }
-              if((amt>50)&&(amt<60))
+              if((amt>50)&&(amt<=60))
               {
                   dum1=5.23;
                   dum2=0.8;
                   dum3=0.7;
                   dum4=60.3;
               }
-              if((amt>60)&&(amt<70))
+              if((amt>60)&&(amt<=70))
               {
                   dum1=6.47;
                   dum2=23.1;
                   dum3=65;
-                  dum4=79.1;
+                  dum4=49.1;
               }
-              if((amt>70)&&(amt<80))
+              if((amt>70)&&(amt<=80))
               {
                   dum1=7.47;
                   dum2=28.1;
                   dum3=43;
                   dum4=59.1;
               }
-              if((amt>80)&&(amt<90))
+              if((amt>80)&&(amt<=90))
               {
                   dum1=3.47;
                   dum2=26.1;
@@ -141,6 +141,12 @@ function add_amt()
           x11.innerHTML+=out;
           var no=document.getElementById("no_ing")
           no.style.display="none"
+          var nammy=document.getElementById("meal_info_input").value;
+    var portion_val=document.getElementById("meal_info_portions").value;
+    console.log(portion_val)
+    localStorage.setItem("portion_val",portion_val)
+    meals_arr.push([nammy,portion_val,dum1,dum2,dum3,dum4])
+    localStorage.setItem("Meals",JSON.stringify(meals_arr))
 
     }
 
@@ -164,10 +170,7 @@ function add_amt()
         id_44.style.display="none"
 
     }
-    var portion_val=document.getElementById("meal_info_portions").value;
-    console.log(portion_val)
-    localStorage.setItem("portion_val",portion_val)
-
+   
 
 
 
