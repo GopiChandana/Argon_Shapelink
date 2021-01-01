@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="blogUser.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <title>Twiik</title>
+  </head>
+
+  <body>
+    <!--Navigation Bar Code starts here-->
+    <div class="navbar">
+      <div class="navbar__top">
+        <div class="left__side">
+          <img
+            class="navbar__logo"
+            src="https://www.shapelink.com/images/logo.png"
+          />
+          <div class="link__div">
+            <a class="top__links" href="https://example.com">Exercise Log</a>
+          </div>
+          <div class="link__div">
+            <a class="top__links" href="https://example.com">Results</a>
+          </div>
+          <div class="link__div">
+            <a class="top__links" href="https://example.com">Challenges</a>
+          </div>
+          <div class="link__div current__page__div">
+            <a class="top__links current__page__link" href="https://example.com"
+              >Friends</a
+            >
+          </div>
+          <div class="link__div">
+            <a class="top__links" href="https://example.com">Groups</a>
+          </div>
+        </div>
+        <div class="right__side">
+          <div class="login_info">
+            <span>Logged in as</span> <span id="login_info"></span>
+            <p class="log_out">Log out</p>
+          </div>
+          <div class="login_icon">
+            <div class="login_icon_img">
+              <img src="login_logo1.png" alt="" />
+            </div>
+            <div class="login_icon_img">
+              <img src="login_logo2.png" alt="" />
+            </div>
+            <div class="login_icon_img">
+              <img src="login_logo3.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar__bottom">
+        <div class="link__div">
+          <a class="bottom__link" href="https://example.com">My friends</a>
+        </div>
+        <div class="link__div">
+          <a
+            class="bottom__link current__subpage__link"
+            href="https://example.com"
+            >Blogs</a
+          >
+        </div>
+        <div class="link__div">
+          <a class="bottom__link" href="https://example.com">Competetions</a>
+        </div>
+        <div class="link__div">
+          <a class="bottom__link" href="https://example.com">Toplists</a>
+        </div>
+      </div>
+    </div>
+    <!--Navigation Bar Code Ends here-->
+    <!-- main page code start -->
+    <div class="container">
+      <div class="container_left">
+        <div class="container_left__inner">
+          <div class="container_left__inner_img">
+            <img src="userProfile.png" alt="userProfile" />
+          </div>
+          <div class="userProfile">
+            <p class="userProfiles"></p>
+            <p
+              style="
+                color: white;
+                font-size: 13px;
+                margin-left: 10px;
+                margin-top: 4px;
+              "
+            >
+              PROFILE
+            </p>
+          </div>
+          <div class="container_left__inner_div">
+            <p><a href="">Summary</a></p>
+          </div>
+          <div class="container_left__inner_div">
+            <p><a href="">Exercise Log</a></p>
+          </div>
+          <div class="container_left__inner_div">
+            <p><a href="">Blog</a></p>
+          </div>
+          <div class="container_left__inner_div">
+            <p><a href="">Challenges</a></p>
+          </div>
+          <div class="change_profile">
+            <i class="fas fa-pen"></i>&nbsp; Change Profile
+          </div>
+          <button id="newBlog">NEW BLOG ENTRY</button>
+          <div class="pages">PAGES</div>
+          <div class="container_left__inner_div">No Pages</div>
+        </div>
+      </div>
+      <div class="container_right">
+        <div class="container_right_inner">
+          <div class="container_right_inner_one">
+            <div class="container_right_inner_one_1">
+              <p id="userId"></p>
+              <p>&nbsp;>&nbsp;<a href="">BLOG</a></p>
+            </div>
+            <div class="container_right_inner_one_2">
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Go
+                to freind
+              </p>
+              &nbsp;
+              <select>
+                <option value="No freind added">No freind added</option>
+              </select>
+            </div>
+          </div>
+          <div class="container_right_inner_two">
+            <div class="container_right_inner_two_p">
+              <p><a href="">Edit blog title</a></p>
+            </div>
+            <div class="container_right_inner_two_userId">
+              <span id="container_right_inner_two_userP"></span
+              ><span class="container_right_inner_two_userP">'S BLOG</span>
+            </div>
+          </div>
+        </div>
+        <div id="updatesBlog"></div>
+      </div>
+    </div>
+    <!-- start of footer -->
+    <div class="footer">
+      <div class="footer_left">
+        <div class="footer_left_img">
+          <img src="https://www.shapelink.com/images/logo.png" alt="logo" />
+        </div>
+        <p>
+          All rights reserved © 2002 - 2020 <br />
+          Developed by Wellnesstech Labs International AB
+        </p>
+        <p>
+          <a href="">Contact Us</a>
+        </p>
+        <p>
+          <a href="">Terms & Conditions</a>
+        </p>
+      </div>
+      <div class="footer_right">
+        <div class="footer_right_img">
+          <img src="../fb.png" alt="facebook" class="fb" />
+        </div>
+        <div class="footer_right_img">
+          <img src="../inst.png" alt="facebook" />
+        </div>
+        <div class="footer_right_img">
+          <img src="../link.png" alt="facebook" />
+        </div>
+        <div class="footer_right_img">
+          <img src="../apple.png" alt="facebook" />
+        </div>
+        <div class="footer_right_img">
+          <img src="../android.png" alt="facebook" />
+        </div>
+      </div>
+    </div>
+    <script src="blogUser.js"></script>
+  </body>
+</html>
