@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="blogs.css" />
+    <link rel="stylesheet" href="blogUser.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -87,127 +87,71 @@
     <div class="container">
       <div class="container_left">
         <div class="container_left__inner">
-          <div class="container_left__inner__heading">
-            <h1>Blogs</h1>
-            <p>Here you can see information about the blogs on Shapelink.com</p>
+          <div class="container_left__inner_img">
+            <img src="userProfile.png" alt="userProfile" />
           </div>
-          <div class="container_left__inner__checkbox">
-            <input type="checkbox" />
-            <p>Show only my favorite blogs.</p>
+          <div class="userProfile">
+            <p class="userProfiles"></p>
+            <p
+              style="
+                color: white;
+                font-size: 13px;
+                margin-left: 10px;
+                margin-top: 4px;
+              "
+            >
+              PROFILE
+            </p>
           </div>
-          <div class="container_left__inner__pages">
-            <p>Page:</p>
-            <p><a href="">First</a></p>
-            <p>|</p>
-            <p><a href="">Previous </a></p>
-            <p>|</p>
-            <p><a href="">1-</a></p>
-            <p><a href="">2-</a></p>
-            <p><a href="">3-</a></p>
-            <p><a href="">4</a></p>
-            <p>|</p>
-            <p><a href="">Next</a></p>
-            <p>|</p>
-            <p><a href="">Last</a></p>
+          <div class="container_left__inner_div">
+            <p><a href="">Summary</a></p>
           </div>
-
-          <div class="container_left__inner__info">
-            <!-- for adding the infos from myblogs and updated the value  -->
+          <div class="container_left__inner_div">
+            <p><a href="">Exercise Log</a></p>
           </div>
-          <div class="container_left__inner__pages">
-            <p>Page:</p>
-            <p><a href="">First</a></p>
-            <p>|</p>
-            <p><a href="">Previous </a></p>
-            <p>|</p>
-            <p><a href="">1-</a></p>
-            <p><a href="">2-</a></p>
-            <p><a href="">3-</a></p>
-            <p><a href="">4</a></p>
-            <p>|</p>
-            <p><a href="">Next</a></p>
-            <p>|</p>
-            <p><a href="">Last</a></p>
+          <div class="container_left__inner_div">
+            <p><a href="">Blog</a></p>
           </div>
+          <div class="container_left__inner_div">
+            <p><a href="">Challenges</a></p>
+          </div>
+          <div class="change_profile">
+            <i class="fas fa-pen"></i>&nbsp; Change Profile
+          </div>
+          <button id="newBlog">NEW BLOG ENTRY</button>
+          <div class="pages">PAGES</div>
+          <div class="container_left__inner_div">No Pages</div>
         </div>
       </div>
       <div class="container_right">
-        <div class="container_right__inner__heading">
-          <h1>My blog</h1>
-          <div class="container_right__inner__buttons">
-            <button id="newblog">
-              <a href="./newBlogs.html"> NEW BLOG ENTRY</a>
-            </button>
-            <button id="showblog">
-              <a href="./blogUser.html"> SHOW MY BLOG</a>
-            </button>
-          </div>
-        </div>
-        <div class="container_right__inner__post">
-          <h1>Most read</h1>
-          <div class="container_right__inner__posts">
-            <div class="container_right__inner__post_img">
-              <img src="blog.png" alt="blogs_photto" />
+        <div class="container_right_inner">
+          <div class="container_right_inner_one">
+            <div class="container_right_inner_one_1">
+              <p id="userId"></p>
+              <p>&nbsp;>&nbsp;<a href="">BLOG</a></p>
             </div>
-            <div class="container_right__inner__post_heading">
+            <div class="container_right_inner_one_2">
               <p>
-                <a href="">
-                  Marvel's 'Avengers' Heading on 'Epic Space Adventure'</a
-                >
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Go
+                to freind
               </p>
-              <span><a href="">on Avengers blog</a></span
-              >&nbsp;<span>by</span>&nbsp; <span><a href=""> hulk,</a></span
-              >&nbsp; <span>Friday 07:15</span>
-              <p>
-                As previewed in last year's Free Comic Book Day release, the
-                Avengers will be venturing out into space, into a quarantined
-                galaxy.
-              </p>
+              &nbsp;
+              <select>
+                <option value="No freind added">No freind added</option>
+              </select>
             </div>
           </div>
-          <div class="container_right__inner__posts">
-            <div class="container_right__inner__post_img">
-              <img src="blog.png" alt="blogs_photto" />
+          <div class="container_right_inner_two">
+            <div class="container_right_inner_two_p">
+              <p><a href="">Edit blog title</a></p>
             </div>
-            <div class="container_right__inner__post_heading">
-              <p>
-                <a href="">
-                  Marvel's 'Avengers' Heading on 'Epic Space Adventure'</a
-                >
-              </p>
-              <span><a href="">on Avengers blog</a></span
-              >&nbsp;<span>by</span>&nbsp; <span><a href=""> hulk,</a></span
-              >&nbsp;
-              <span>Friday 07:15</span>
-              <p>
-                As previewed in last year's Free Comic Book Day release, the
-                Avengers will be venturing out into space, into a quarantined
-                galaxy.
-              </p>
-            </div>
-          </div>
-          <div class="container_right__inner__posts">
-            <div class="container_right__inner__post_img">
-              <img src="blog.png" alt="blogs_photto" />
-            </div>
-            <div class="container_right__inner__post_heading">
-              <p>
-                <a href="">
-                  Marvel's 'Avengers' Heading on 'Epic Space Adventure'</a
-                >
-              </p>
-              <span><a href="">on Avengers blog</a></span
-              >&nbsp;<span>by</span>&nbsp; <span><a href=""> hulk,</a></span
-              >&nbsp;
-              <span>Friday 07:15</span>
-              <p>
-                As previewed in last year's Free Comic Book Day release, the
-                Avengers will be venturing out into space, into a quarantined
-                galaxy.
-              </p>
+            <div class="container_right_inner_two_userId">
+              <span id="container_right_inner_two_userP"></span
+              ><span class="container_right_inner_two_userP">'S BLOG</span>
             </div>
           </div>
         </div>
+        <div id="updatesBlog"></div>
       </div>
     </div>
     <!-- start of footer -->
@@ -245,6 +189,6 @@
         </div>
       </div>
     </div>
-    <script src="blogs.js"></script>
+    <script src="blogUser.js"></script>
   </body>
 </html>

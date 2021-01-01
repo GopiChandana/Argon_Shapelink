@@ -33,11 +33,21 @@ const init = function (e) {
     document.querySelector("#subject").value = "";
     console.log("data", mytextarea_datas);
     localStorage.setItem("myBlogs", JSON.stringify(mytextarea_datas));
+
+    //  displaying the alert  for switching the page
+    var display = confirm(
+      "IF PREES OK YOU WILL BE REDIRECT TO YOUR PROFILE PAGE OR WANT TO ADD SOME MORE BLOGS PRESS CANCEL"
+    );
+    if (display == true) {
+      window.document.location = "./blogUser.html";
+    } else {
+      window.document.location = "./newBlogs.html";
+    }
   };
   sumit_button.addEventListener("click", addData);
 };
 var myBlogsl = JSON.parse(localStorage.getItem("myBlogs"));
-if (myBlogsl.length > 2) {
+if (myBlogsl.length > 3) {
   window.localStorage.removeItem("myBlogs");
 }
 
