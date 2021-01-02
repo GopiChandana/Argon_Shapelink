@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="blogs.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <title>Twiik</title>
+  </head>
+
+  <body>
+    <!--Navigation Bar Code starts here-->
+    <div class="navbar">
+      <div class="navbar__top">
+        <div class="left__side">
+          <img
+            class="navbar__logo"
+            src="https://www.shapelink.com/images/logo.png"
+          />
+          <div class="link__div">
+            <a class="top__links" href="https://example.com">Exercise Log</a>
+          </div>
+          <div class="link__div">
+            <a class="top__links" href="https://example.com">Results</a>
+          </div>
+          <div class="link__div">
+            <a class="top__links" href="https://example.com">Challenges</a>
+          </div>
+          <div class="link__div current__page__div">
+            <a class="top__links current__page__link" href="https://example.com"
+              >Friends</a
+            >
+          </div>
+          <div class="link__div">
+            <a class="top__links" href="https://example.com">Groups</a>
+          </div>
+        </div>
+        <div class="right__side">
+          <div class="login_info">
+            <span>Logged in as</span> <span id="login_info"></span>
+            <p class="log_out">Log out</p>
+          </div>
+          <div class="login_icon">
+            <div class="login_icon_img">
+              <img src="login_logo1.png" alt="" />
+            </div>
+            <div class="login_icon_img">
+              <img src="login_logo2.png" alt="" />
+            </div>
+            <div class="login_icon_img">
+              <img src="login_logo3.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar__bottom">
+        <div class="link__div">
+          <a class="bottom__link" href="https://example.com">My friends</a>
+        </div>
+        <div class="link__div">
+          <a
+            class="bottom__link current__subpage__link"
+            href="https://example.com"
+            >Blogs</a
+          >
+        </div>
+        <div class="link__div">
+          <a class="bottom__link" href="https://example.com">Competetions</a>
+        </div>
+        <div class="link__div">
+          <a class="bottom__link" href="https://example.com">Toplists</a>
+        </div>
+      </div>
+    </div>
+    <!--Navigation Bar Code Ends here-->
+    <!-- main page code start -->
+    <div class="container">
+      <div class="container_left">
+        <div class="container_left__inner">
+          <div class="container_left__inner__heading">
+            <h1>Blogs</h1>
+            <p>Here you can see information about the blogs on Shapelink.com</p>
+          </div>
+          <div class="container_left__inner__checkbox">
+            <input type="checkbox" />
+            <p>Show only my favorite blogs.</p>
+          </div>
+          <div class="container_left__inner__pages">
+            <p>Page:</p>
+            <p><a href="">First</a></p>
+            <p>|</p>
+            <p><a href="">Previous </a></p>
+            <p>|</p>
+            <p><a href="">1-</a></p>
+            <p><a href="">2-</a></p>
+            <p><a href="">3-</a></p>
+            <p><a href="">4</a></p>
+            <p>|</p>
+            <p><a href="">Next</a></p>
+            <p>|</p>
+            <p><a href="">Last</a></p>
+          </div>
+
+          <div class="container_left__inner__info">
+            <!-- for adding the infos from myblogs and updated the value  -->
+          </div>
+          <div class="container_left__inner__pages">
+            <p>Page:</p>
+            <p><a href="">First</a></p>
+            <p>|</p>
+            <p><a href="">Previous </a></p>
+            <p>|</p>
+            <p><a href="">1-</a></p>
+            <p><a href="">2-</a></p>
+            <p><a href="">3-</a></p>
+            <p><a href="">4</a></p>
+            <p>|</p>
+            <p><a href="">Next</a></p>
+            <p>|</p>
+            <p><a href="">Last</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="container_right">
+        <div class="container_right__inner__heading">
+          <h1>My blog</h1>
+          <div class="container_right__inner__buttons">
+            <button id="newblog">
+              <a href="./newBlogs.html"> NEW BLOG ENTRY</a>
+            </button>
+            <button id="showblog">
+              <a href="./blogUser.html"> SHOW MY BLOG</a>
+            </button>
+          </div>
+        </div>
+        <div class="container_right__inner__post">
+          <h1>Most read</h1>
+          <div class="container_right__inner__posts">
+            <div class="container_right__inner__post_img">
+              <img src="blog.png" alt="blogs_photto" />
+            </div>
+            <div class="container_right__inner__post_heading">
+              <p>
+                <a href="">
+                  Marvel's 'Avengers' Heading on 'Epic Space Adventure'</a
+                >
+              </p>
+              <span><a href="">on Avengers blog</a></span
+              >&nbsp;<span>by</span>&nbsp; <span><a href=""> hulk,</a></span
+              >&nbsp; <span>Friday 07:15</span>
+              <p>
+                As previewed in last year's Free Comic Book Day release, the
+                Avengers will be venturing out into space, into a quarantined
+                galaxy.
+              </p>
+            </div>
+          </div>
+          <div class="container_right__inner__posts">
+            <div class="container_right__inner__post_img">
+              <img src="blog.png" alt="blogs_photto" />
+            </div>
+            <div class="container_right__inner__post_heading">
+              <p>
+                <a href="">
+                  Marvel's 'Avengers' Heading on 'Epic Space Adventure'</a
+                >
+              </p>
+              <span><a href="">on Avengers blog</a></span
+              >&nbsp;<span>by</span>&nbsp; <span><a href=""> hulk,</a></span
+              >&nbsp;
+              <span>Friday 07:15</span>
+              <p>
+                As previewed in last year's Free Comic Book Day release, the
+                Avengers will be venturing out into space, into a quarantined
+                galaxy.
+              </p>
+            </div>
+          </div>
+          <div class="container_right__inner__posts">
+            <div class="container_right__inner__post_img">
+              <img src="blog.png" alt="blogs_photto" />
+            </div>
+            <div class="container_right__inner__post_heading">
+              <p>
+                <a href="">
+                  Marvel's 'Avengers' Heading on 'Epic Space Adventure'</a
+                >
+              </p>
+              <span><a href="">on Avengers blog</a></span
+              >&nbsp;<span>by</span>&nbsp; <span><a href=""> hulk,</a></span
+              >&nbsp;
+              <span>Friday 07:15</span>
+              <p>
+                As previewed in last year's Free Comic Book Day release, the
+                Avengers will be venturing out into space, into a quarantined
+                galaxy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- start of footer -->
+    <div class="footer">
+      <div class="footer_left">
+        <div class="footer_left_img">
+          <img src="https://www.shapelink.com/images/logo.png" alt="logo" />
+        </div>
+        <p>
+          All rights reserved © 2002 - 2020 <br />
+          Developed by Wellnesstech Labs International AB
+        </p>
+        <p>
+          <a href="">Contact Us</a>
+        </p>
+        <p>
+          <a href="">Terms & Conditions</a>
+        </p>
+      </div>
+      <div class="footer_right">
+        <div class="footer_right_img">
+          <img src="./fb.png" alt="facebook" class="fb" />
+        </div>
+        <div class="footer_right_img">
+          <img src="./inst.png" alt="facebook" />
+        </div>
+        <div class="footer_right_img">
+          <img src="./link.png" alt="facebook" />
+        </div>
+        <div class="footer_right_img">
+          <img src="./apple.png" alt="facebook" />
+        </div>
+        <div class="footer_right_img">
+          <img src="./android.png" alt="facebook" />
+        </div>
+      </div>
+    </div>
+    <script src="blogs.js"></script>
+  </body>
+</html>
