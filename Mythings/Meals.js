@@ -40,21 +40,15 @@ if(mm_1[0][0]!="")
             
     }
 }
-<<<<<<< HEAD
-
-=======
 console.log(Number(mm_1[0][2])*Number(mm_1[0][1]))
 console.log(Number(mm_1[0][3])*Number(mm_1[0][1]))
 console.log(Number(mm_1[0][4])*Number(mm_1[0][1]))
 console.log(Number(mm_1[0][5])*Number(mm_1[0][1]))
->>>>>>> c11e2207fe351273cbf9f4a7bad926536f4be604
 function dell(c)
 {
      var ab=document.getElementById(c);
      ab.style.display="none"
 }
-<<<<<<< HEAD
-=======
 for(var j=0;j<mm_1.length;j++)
 {
 var tabval=document.getElementById("cardiolist_table")
@@ -69,4 +63,3 @@ var out=`<tr id="${mm_1[j][0]}" >
   </tr>`
   tabval.innerHTML+=out;
 }
->>>>>>> c11e2207fe351273cbf9f4a7bad926536f4be604
