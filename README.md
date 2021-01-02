@@ -11,6 +11,8 @@ To create this clone following Tech stack is used by contributors.
 
 ## Home Page :
 - The Homepage of Shapelink website shows the various features which they offer to their clients.
+- in top section there is a navbar which connects all the pages to each other.
+- at the bottom section there is a footer which is same across all the pages.
 
 ![Home page](https://tgdown.eu-gb.mybluemix.net/2200520399093696/2021-01-02_08:30:40.jpg)
 
