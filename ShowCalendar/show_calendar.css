@@ -92,7 +92,7 @@
 .navbar {
   position: sticky;
   top: 0%;
-  z-index: 22;
+  z-index: 2;
 }
 .navbar__top {
   display: flex;
