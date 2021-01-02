@@ -57,6 +57,8 @@ To create this clone following Tech stack is used by contributors.
 ![Blog home](https://tgdown.eu-gb.mybluemix.net/2200967075692480/2021-01-02_08:45:48.jpg)
 ![Blog Blank](https://tgdown.eu-gb.mybluemix.net/2202135306796992/2021-01-02_09:29:15.jpg)
 
+*** 
+## Team Members and Cotributors
 ### Himanshu Kumar
 - **Github** : https://github.com/hithanos
 - **Email** : hkghimanshu@gmail.com
