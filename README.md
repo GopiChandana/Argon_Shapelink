@@ -1,5 +1,5 @@
 # Shapelink
-Shapelink is an easy to use workout log which helps us to track our activities and results.
+Shapelink is an easy to use workout log website which helps us to track our activities and results.
 ---
 ## Tech stacks used :
 To create this clone following Tech stack is used by contributors.
