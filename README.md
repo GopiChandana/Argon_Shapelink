@@ -24,7 +24,7 @@ To create this clone following Tech stack is used by contributors.
 ![Login](https://tgdown.eu-gb.mybluemix.net/2200554758832064/2021-01-02_08:31:27.jpg)
 
 ## Exercise page :
-- There are many Child pages linked to the Excercise page, but for this clone following pages are made.
+- There are many Child pages linked to the Exercise page, but for this clone following pages are made.
 1. Show Calender
 2. My Things
 
